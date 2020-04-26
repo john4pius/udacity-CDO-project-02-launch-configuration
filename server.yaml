@@ -62,10 +62,7 @@ Resources:
           apt-get install unzip awscli -y
           apt-get install apache2 -y
           systemctl start apache2.service
-          cd /var
-          mkdir www
-          cd /var/www
-          mkdir html
+          mkdir -p ~/var/www/html
           cd /var/www/html
           wget https://dev-ops-01.s3.amazonaws.com/data.zip
           unzip -o data.zip
